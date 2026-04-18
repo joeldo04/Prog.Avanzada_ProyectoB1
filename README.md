@@ -139,8 +139,7 @@ Se recomienda usar:
 * Presentación
 * Negocio
 * Datos
-
-### Clases
+* Clases
 
 ---
 
