@@ -6,18 +6,20 @@ public class UsuarioSistema {
     private String nombre;
     private String apellido;
     private String correo;
+    private String telefono;
     private Rol rolUsuario;
 
     public UsuarioSistema() {
     }
 
-    public UsuarioSistema(int idUsuario, String cedula, String nombre, 
-            String apellido, String correo, Rol rolUsuario) {
+    public UsuarioSistema(int idUsuario, String cedula, String nombre, String apellido, 
+            String correo, String telefono, Rol rolUsuario) {
         this.idUsuario = idUsuario;
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
+        this.telefono = telefono;
         this.rolUsuario = rolUsuario;
     }
 
@@ -39,6 +41,10 @@ public class UsuarioSistema {
 
     public String getCorreo() {
         return correo;
+    }
+
+    public String getTelefono() {
+        return telefono;
     }
 
     public Rol getRolUsuario() {
@@ -65,14 +71,18 @@ public class UsuarioSistema {
         this.correo = correo;
     }
 
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public void setRolUsuario(Rol rolUsuario) {
         this.rolUsuario = rolUsuario;
     }
 
     @Override
     public String toString() {
-        return "UsuarioSistema{" + "idUsuario=" + idUsuario + ", cedula=" + 
-                cedula + ", nombre=" + nombre + ", apellido=" + apellido + 
-                ", correo=" + correo + ", rolUsuario=" + rolUsuario + '}';
+        return "UsuarioSistema{" + "idUsuario=" + idUsuario + ", cedula=" + cedula + 
+                ", nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo + 
+                ", telefono=" + telefono + ", rolUsuario=" + rolUsuario + '}';
     }
 }
