@@ -1,5 +1,6 @@
 package BaseDatos;
 
+import Clases.EstadoPaquete;
 import Clases.Paquete;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -54,20 +55,12 @@ public class PaqueteBD {
     public int ActualizarEstadoPaquete(Paquete objPaquete)
             throws SQLException, ClassNotFoundException {
 
-        String Sentencia = "UPDATE paquete SET idEstadoActual=?, idUsuarioRepartidor=? "
-                + "WHERE codigoPaquete=?";
+        String Sentencia = "UPDATE paquete SET idEstadoActual = ? WHERE idPaquete = ?";
 
         PreparedStatement ps = BLcon.getConnection().prepareStatement(Sentencia);
 
         ps.setInt(1, objPaquete.getEstadoActual().getIdEstado());
-
-        if (objPaquete.getUsuarioRepartidor() != null) {
-            ps.setInt(2, objPaquete.getUsuarioRepartidor().getIdUsuario());
-        } else {
-            ps.setNull(2, java.sql.Types.INTEGER);
-        }
-
-        ps.setString(3, objPaquete.getCodigoPaquete());
+        ps.setInt(2, objPaquete.getIdPaquete());
 
         return ps.executeUpdate();
     }
@@ -81,4 +74,95 @@ public class PaqueteBD {
 
         return ps.executeQuery();
     }
+
+    public Paquete BuscarPaquetePorSeguimiento(String seguimiento)
+            throws SQLException, ClassNotFoundException {
+
+        String Sentencia = "SELECT * FROM paquete WHERE numeroSeguimiento = ?";
+
+        PreparedStatement ps = BLcon.getConnection().prepareStatement(Sentencia);
+        ps.setString(1, seguimiento);
+
+        ResultSet rs = ps.executeQuery();
+
+        Paquete p = null;
+
+        if (rs.next()) {
+            p = new Paquete();
+            p.setIdPaquete(rs.getInt("idPaquete"));
+            p.setNumeroSeguimiento(rs.getString("numeroSeguimiento"));
+        }
+
+        return p;
+    }
+
+    public Paquete BuscarPaquetePorCodigo(String codigo)
+            throws SQLException, ClassNotFoundException {
+
+        String Sentencia = "SELECT * FROM paquete WHERE codigoPaquete = ?";
+
+        PreparedStatement ps = BLcon.getConnection().prepareStatement(Sentencia);
+        ps.setString(1, codigo);
+
+        ResultSet rs = ps.executeQuery();
+
+        Paquete p = null;
+
+        if (rs.next()) {
+            p = new Paquete();
+            p.setIdPaquete(rs.getInt("idPaquete"));
+
+            EstadoPaquete estado = new EstadoPaquete();
+            estado.setIdEstado(rs.getInt("idEstadoActual"));
+
+            p.setEstadoActual(estado);
+        }
+
+        return p;
+    }
+
+    public int RegistrarEntrega(Paquete objPaquete)
+            throws SQLException, ClassNotFoundException {
+
+        String sentencia = "UPDATE paquete SET idEstadoActual = ?, idUsuarioRepartidor = ? WHERE idPaquete = ?";
+
+        PreparedStatement ps = BLcon.getConnection().prepareStatement(sentencia);
+
+        ps.setInt(1, objPaquete.getEstadoActual().getIdEstado());
+        ps.setInt(2, objPaquete.getUsuarioRepartidor().getIdUsuario());
+        ps.setInt(3, objPaquete.getIdPaquete());
+
+        return ps.executeUpdate();
+    }
+
+    public Paquete BuscarPorSeguimiento(String seguimiento)
+            throws SQLException, ClassNotFoundException {
+
+        String sentencia = "SELECT idPaquete, codigoPaquete, numeroSeguimiento, idEstadoActual "
+                + "FROM paquete WHERE numeroSeguimiento = ?";
+
+        PreparedStatement ps = BLcon.getConnection().prepareStatement(sentencia);
+        ps.setString(1, seguimiento);
+
+        ResultSet rs = ps.executeQuery();
+
+        Paquete objPaquete = null;
+
+        if (rs.next()) {
+            objPaquete = new Paquete();
+
+            objPaquete.setIdPaquete(rs.getInt("idPaquete"));
+            objPaquete.setCodigoPaquete(rs.getString("codigoPaquete"));
+            objPaquete.setNumeroSeguimiento(rs.getString("numeroSeguimiento"));
+
+            EstadoPaquete estado = new EstadoPaquete();
+            estado.setIdEstado(rs.getInt("idEstadoActual"));
+
+            objPaquete.setEstadoActual(estado);
+        }
+
+        rs.close();
+        return objPaquete;
+    }
+
 }
