@@ -144,6 +144,5 @@ public class Paquete {
                 remitente + ", destinatario=" + destinatario + ", usuarioRegistro=" + usuarioRegistro + 
                 ", usuarioRepartidor=" + usuarioRepartidor + '}';
     }
-    
-    
+        
 }
