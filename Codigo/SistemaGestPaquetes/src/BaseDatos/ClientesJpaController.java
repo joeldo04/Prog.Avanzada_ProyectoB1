@@ -14,6 +14,7 @@ import java.util.Collection;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 public class ClientesJpaController implements Serializable {
 
@@ -21,6 +22,10 @@ public class ClientesJpaController implements Serializable {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
+
+    public ClientesJpaController() {
+        this.emf = Persistence.createEntityManagerFactory("SistemaGestPaquetesPU");
+    }
 
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
