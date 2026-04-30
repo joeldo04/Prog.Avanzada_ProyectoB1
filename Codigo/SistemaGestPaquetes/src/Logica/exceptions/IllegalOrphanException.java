@@ -1,4 +1,4 @@
-package BaseDatos.exceptions;
+package Logica.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;

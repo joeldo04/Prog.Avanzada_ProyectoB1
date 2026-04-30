@@ -1,4 +1,4 @@
-package BaseDatos.exceptions;
+package Logica.exceptions;
 
 public class PreexistingEntityException extends Exception {
     public PreexistingEntityException(String message, Throwable cause) {

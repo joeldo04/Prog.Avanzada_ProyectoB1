@@ -1,7 +1,7 @@
-package BaseDatos;
+package Logica;
 
-import BaseDatos.exceptions.IllegalOrphanException;
-import BaseDatos.exceptions.NonexistentEntityException;
+import Logica.exceptions.IllegalOrphanException;
+import Logica.exceptions.NonexistentEntityException;
 import Clases.Rolessistema;
 import java.io.Serializable;
 import javax.persistence.Query;
