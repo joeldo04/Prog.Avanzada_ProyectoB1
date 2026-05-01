@@ -61,6 +61,21 @@ public class LogRepartidor {
         return true;
     }
 
+    public Paquetes BuscarPaqueteAsignadoPorCodigo(Usuarios objRepartidor, String codigoPaquete) {
+
+        List<Paquetes> lista = ListarPaquetesAsignados(objRepartidor);
+
+        if (lista == null) {
+            return null;
+        }
+        for (Paquetes p : lista) {
+            if (p.getCodigoPaquete().equals(codigoPaquete)) {
+                return p;
+            }
+        }
+        return null;
+    }
+
     public boolean RegistrarEntrega(Paquetes objPaquete, Usuarios objRepartidor,
             String nombreRecibe, String observaciones) throws Exception {
 
