@@ -3,6 +3,10 @@ package Presentacion;
 import Clases.Usuarios;
 import Logica.LogUsuario;
 import javax.swing.JOptionPane;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Inicio extends javax.swing.JFrame {
 
@@ -16,6 +20,27 @@ public class Inicio extends javax.swing.JFrame {
         setSize(950, 580);
         setLocationRelativeTo(null);
         setResizable(false);
+        iniciarReloj();
+    }
+
+    public void iniciarReloj() {
+        actualizarReloj();
+
+        javax.swing.Timer timer = new javax.swing.Timer(1000, new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent e) {
+                actualizarReloj();
+            }
+        });
+
+        timer.start();
+    }
+
+    public void actualizarReloj() {
+        Date fechaActual = new Date();
+
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
+
+        lblReloj.setText(formato.format(fechaActual));
     }
 
     public void ingresarUsuarioSistema() {
@@ -37,16 +62,20 @@ public class Inicio extends javax.swing.JFrame {
                         + "Ingreso correcto ! \n"
                         + "Rol: RECEPCIONISTA");
 
-            }if (objLogUsuario.EsOperadorDespacho(usuarioEncontrado)) {
+                MenuRecepcionista ventana = new MenuRecepcionista(usuarioEncontrado);
+                ventana.setVisible(true);
+                this.dispose();
+
+            } else if (objLogUsuario.EsOperadorDespacho(usuarioEncontrado)) {
                 JOptionPane.showMessageDialog(this,
                         "Bienvenido/a " + nombreCompleto + "\n"
                         + "Ingreso correcto ! \n"
                         + "Rol: OPERADOR DE DESPACHO");
 
-            }if (objLogUsuario.EsRepartidor(usuarioEncontrado)) {
+            } else if (objLogUsuario.EsRepartidor(usuarioEncontrado)) {
                 JOptionPane.showMessageDialog(this,
                         "Bienvenido/a " + nombreCompleto + "\n"
-                        + "Ingreso correcto ! .\n"
+                        + "Ingreso correcto ! \n"
                         + "Rol: REPARTIDOR");
 
             } else {
@@ -85,6 +114,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
+        lblReloj = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -284,6 +314,10 @@ public class Inicio extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Prog Avanzada - Abril/Agosto 2026");
 
+        lblReloj.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        lblReloj.setForeground(new java.awt.Color(255, 255, 255));
+        lblReloj.setText("00/00/0000 - 00:00:00");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -291,13 +325,17 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(61, 61, 61)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblReloj, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(jLabel10)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(lblReloj))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -340,14 +378,6 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ingresarUsuarioSistema();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCedulaActionPerformed
@@ -355,6 +385,14 @@ public class Inicio extends javax.swing.JFrame {
     private void txtNumSeguimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumSeguimientoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumSeguimientoActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ingresarUsuarioSistema();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -410,6 +448,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JLabel lblReloj;
     private javax.swing.JTextField txtCedula;
     private javax.swing.JTextField txtNumSeguimiento;
     // End of variables declaration//GEN-END:variables
