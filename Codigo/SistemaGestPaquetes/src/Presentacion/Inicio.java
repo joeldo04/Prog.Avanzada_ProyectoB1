@@ -72,6 +72,10 @@ public class Inicio extends javax.swing.JFrame {
                         + "Ingreso correcto ! \n"
                         + "Rol: OPERADOR DE DESPACHO");
 
+                MenuOpDespacho ventana = new MenuOpDespacho(usuarioEncontrado);
+                ventana.setVisible(true);
+                this.dispose();
+
             } else if (objLogUsuario.EsRepartidor(usuarioEncontrado)) {
                 JOptionPane.showMessageDialog(this,
                         "Bienvenido/a " + nombreCompleto + "\n"
