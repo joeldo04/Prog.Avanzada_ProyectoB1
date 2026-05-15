@@ -306,7 +306,7 @@ public class MenuRecepcionista extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Menu Recepcionista - Registro del Paquete");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\logo.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/logo.png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -396,7 +396,7 @@ public class MenuRecepcionista extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(128, 128, 128));
         jLabel14.setText("Cedula:");
 
-        jLabel15.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\user.png")); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/user.png"))); // NOI18N
         jLabel15.setText("jLabel8");
 
         jLabel16.setBackground(new java.awt.Color(102, 102, 102));
@@ -588,7 +588,7 @@ public class MenuRecepcionista extends javax.swing.JFrame {
         txtDireccionEntrega.setBackground(new java.awt.Color(255, 255, 255));
         txtDireccionEntrega.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\paq.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/paq.png"))); // NOI18N
         jLabel4.setText("jLabel4");
 
         txtEstadoPaquete.setBackground(new java.awt.Color(255, 255, 255));
@@ -737,7 +737,7 @@ public class MenuRecepcionista extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\cliente.png")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/cliente.png"))); // NOI18N
         jLabel11.setText("jLabel9");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);

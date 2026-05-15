@@ -191,7 +191,7 @@ public class MenuOpDespacho extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Menu Operador Despacho - Despachar Paquetes");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\logo.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/logo.png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -300,7 +300,7 @@ public class MenuOpDespacho extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\despc.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/despc.png"))); // NOI18N
         jLabel4.setText("jLabel4");
 
         jLabel14.setBackground(new java.awt.Color(102, 102, 102));
@@ -365,7 +365,7 @@ public class MenuOpDespacho extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\jcvei\\OneDrive\\Escritorio\\4 CICLO COMPUTACION\\Prog.Avanzada_ProyectoB1\\recursos\\visto.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/visto.png"))); // NOI18N
         jLabel5.setText("jLabel5");
 
         btnLimpiar.setBackground(new java.awt.Color(6, 57, 133));

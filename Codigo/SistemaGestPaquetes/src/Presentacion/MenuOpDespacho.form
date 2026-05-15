@@ -134,7 +134,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\logo.png"/>
+                  <Image iconType="3" name="/recursos/logo.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -410,7 +410,7 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\despc.png"/>
+                  <Image iconType="3" name="/recursos/despc.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel4"/>
               </Properties>
@@ -558,7 +558,7 @@
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\visto.png"/>
+                  <Image iconType="3" name="/recursos/visto.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel5"/>
               </Properties>

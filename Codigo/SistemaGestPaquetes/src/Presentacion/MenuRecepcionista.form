@@ -153,7 +153,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\logo.png"/>
+                  <Image iconType="3" name="/recursos/logo.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -388,7 +388,7 @@
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\user.png"/>
+                  <Image iconType="3" name="/recursos/user.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel8"/>
               </Properties>
@@ -819,7 +819,7 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\paq.png"/>
+                  <Image iconType="3" name="/recursos/paq.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel4"/>
               </Properties>
@@ -1146,7 +1146,7 @@
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\cliente.png"/>
+                  <Image iconType="3" name="/recursos/cliente.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel9"/>
               </Properties>

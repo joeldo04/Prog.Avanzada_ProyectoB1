@@ -114,7 +114,7 @@
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                  <EmptySpace pref="11" max="32767" attributes="0"/>
                   <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -189,7 +189,7 @@
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\logo.png"/>
+                  <Image iconType="3" name="/recursos/logo.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -215,34 +215,6 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" pref="95" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel6" min="-2" pref="268" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel7" min="-2" pref="153" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtCodigoPaquete" min="-2" pref="322" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel8" alignment="0" min="-2" pref="153" max="-2" attributes="0"/>
-                                          <Component id="jLabel9" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="txtObservaciones" min="-2" pref="509" max="-2" attributes="0"/>
-                                          <Component id="txtNombreRecibe" min="-2" pref="509" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="jLabel11" min="-2" pref="253" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -265,6 +237,36 @@
                                   </Group>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="jLabel11" min="-2" pref="253" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel6" min="-2" pref="268" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel7" min="-2" pref="153" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtCodigoPaquete" min="-2" pref="322" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel8" alignment="0" min="-2" pref="153" max="-2" attributes="0"/>
+                                          <Component id="jLabel9" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtObservaciones" min="-2" pref="509" max="-2" attributes="0"/>
+                                          <Component id="txtNombreRecibe" min="-2" pref="509" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
                       </Group>
                       <EmptySpace pref="71" max="32767" attributes="0"/>
                   </Group>
@@ -274,26 +276,31 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtCodigoPaquete" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtCodigoPaquete" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jLabel4" min="-2" pref="86" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="19" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtNombreRecibe" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtObservaciones" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtObservaciones" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
@@ -302,7 +309,7 @@
                           <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtEstadoActualPaq" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                           <Component id="txtDireccionEntrega" min="-2" pref="26" max="-2" attributes="0"/>
@@ -383,9 +390,8 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\reptdor.png"/>
+                  <Image iconType="3" name="/recursos/despc.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="jLabel4"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
@@ -543,6 +549,26 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarEActionPerformed"/>
               </Events>
             </Component>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="64" green="2d" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="34" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="163" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel5">
