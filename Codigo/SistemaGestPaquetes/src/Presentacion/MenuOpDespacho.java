@@ -15,9 +15,6 @@ public class MenuOpDespacho extends javax.swing.JFrame {
     LogOperadorDespacho objLogOperador = new LogOperadorDespacho();
     LogUsuario objLogUsuario = new LogUsuario();
 
-    /**
-     * Creates new form MenuOpDespacho
-     */
     public MenuOpDespacho() {
         initComponents();
         setSize(950, 580);

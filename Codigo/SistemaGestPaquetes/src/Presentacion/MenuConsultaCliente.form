@@ -106,9 +106,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\logo.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
             </Component>
@@ -245,9 +242,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\cliente.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel9"/>
               </Properties>
             </Component>
@@ -379,9 +373,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\jcvei\OneDrive\Escritorio\4 CICLO COMPUTACION\Prog.Avanzada_ProyectoB1\recursos\user.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel8"/>
               </Properties>
             </Component>
@@ -786,7 +777,7 @@
                   <Color blue="77" green="3b" red="a" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="Ingrese n&#xfa;mero de seguimiento"/>
+                <Property name="text" type="java.lang.String" value="Ingrese n&#xfa;mero de seguimiento:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="BtnConsultaPaq">
@@ -985,7 +976,6 @@
                           <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtCodigoUnicoPaq" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">

@@ -390,7 +390,7 @@ public class Inicio extends javax.swing.JFrame {
         String numeroSeguimiento = txtNumSeguimiento.getText();
         if (numeroSeguimiento.length() == 0) {
             JOptionPane.showMessageDialog(this,
-                    "Ingrese un número de seguimiento");
+                    "Ingrese un número de seguimiento:");
             return;
         }
         MenuConsultaCliente ventana = new MenuConsultaCliente(numeroSeguimiento);
